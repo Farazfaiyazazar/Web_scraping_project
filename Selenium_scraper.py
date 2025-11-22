@@ -16,7 +16,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), opti
 
 data = []
 
-# Scrape first 3 pages
+# Scrape first 3 pages which have 30 items
 for page in range(1, 4):
     url = base_url.format(page)
     print(f"Scraping page {page}...")
